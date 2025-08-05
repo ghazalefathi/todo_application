@@ -20,7 +20,7 @@ SnackbarController mySnackBar({
       margin: EdgeInsets.only(bottom: 20),
       snackPosition: SnackPosition.BOTTOM,
       barBlur: 0,
-      backgroundColor: AppColors.primary500,
+      backgroundColor: AppColors.transparent,
       colorText: Colors.white,
       // margin: EdgeInsets.only(right: 20, left: 20),
       borderRadius: 60,
