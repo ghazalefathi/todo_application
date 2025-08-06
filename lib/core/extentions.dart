@@ -14,7 +14,6 @@ extension Dimensions on BuildContext {
 
 extension HumanReadable on String {
   String toReadable() {
-    // String result;
     if (isEmpty || this == '') return '';
 
     RegExp reg = RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))');
@@ -22,19 +21,6 @@ extension HumanReadable on String {
     return replaceAllMapped(reg, mathFunc);
   }
 
-  String formatCardNumber(String input) {
-    String tmp = removeAllSpaces();
-    return tmp.replaceAll(
-      RegExp(r'(.{4})(?=.)'),
-      r'$1   ',
-    );
-  }
 
-  String removeAllSpaces() {
-    return replaceAll(RegExp(r'\s+'), '');
-  }
 
-  String removeNumbers() {
-    return replaceAll(RegExp(r'\d'), '');
-  }
 }

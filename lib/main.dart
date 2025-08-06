@@ -29,10 +29,6 @@ class _MainAppState extends State<MainApp> {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       textDirection: Utils.defaultTextDirection,
-      supportedLocales: [Utils.getEnLocale(), Utils.getPrLocale()],
-      onReady: () {
-        Get.updateLocale(Utils.getEnLocale());
-      },
       theme: ThemeData(scaffoldBackgroundColor: AppColors.transparent),
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,

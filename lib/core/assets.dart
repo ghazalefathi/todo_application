@@ -7,7 +7,9 @@ class Assets {
   static String sound = 'sounds';
 
 
+  //! png
 
+  static  String get bgHome  => '$img/bg_home.png';
   //! gif
 
   //! svg
