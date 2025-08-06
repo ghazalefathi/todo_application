@@ -33,7 +33,7 @@ class _MainAppState extends State<MainApp> {
       onReady: () {
         Get.updateLocale(Utils.getEnLocale());
       },
-      theme: ThemeData(scaffoldBackgroundColor: AppColors.background),
+      theme: ThemeData(scaffoldBackgroundColor: AppColors.transparent),
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
       initialBinding: MyBindings(),
