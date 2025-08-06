@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  
   static Color get primary => Color.fromRGBO(1, 17, 61, 1);
   static Color get secondary => Color(0xff344FA1);
 
@@ -25,4 +24,5 @@ class AppColors {
   static Color get deleteAccount => Color(0xffFA9C93);
   static Color get border => Color(0xffF6F3FF);
 
+  static Color get labelDarkSecondary => Color(0xffEBEBF5);
 }

@@ -10,6 +10,7 @@ class Assets {
   //! png
 
   static  String get bgHome  => '$img/bg_home.png';
+  static  String get imgHome  => '$img/img_home.png';
   //! gif
 
   //! svg
@@ -26,10 +27,10 @@ class Assets {
     BottomNavEnum bottomNav,
   ) =>
       switch (bottomNav) {
-        BottomNavEnum.profile => '$svg/ic_profile.svg',
-        BottomNavEnum.shop => '$svg/ic_store.svg',
-        BottomNavEnum.home => '',
-        BottomNavEnum.earn => '$svg/ic_earn.svg',
-        BottomNavEnum.friends => '$svg/ic_friends.svg'
+       
+        BottomNavEnum.home => '$svg/ic_add.svg',
+        BottomNavEnum.menu => '$svg/ic_menu.svg',
+        BottomNavEnum.location => '$svg/ic_location.svg',
+       
       };
 }
