@@ -1,7 +1,5 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:todo_application/core/app_colors.dart';
-import 'package:todo_application/core/extentions.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
