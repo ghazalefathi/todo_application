@@ -30,7 +30,7 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
     return Scaffold(
         backgroundColor: AppColors.transparent,
         extendBody: true,
-        bottomNavigationBar: BottomNavWidget(),
+        // bottomNavigationBar: BottomNavWidget(),
         body: Stack(children: [
           GetBuilder<MainController>(
               id: 'bottomNav',

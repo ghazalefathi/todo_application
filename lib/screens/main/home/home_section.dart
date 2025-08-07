@@ -4,15 +4,14 @@ import 'package:todo_application/core/assets.dart';
 import 'package:todo_application/core/extentions.dart';
 import 'package:todo_application/widgets/public/my_text_widget.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class HomeSection extends StatelessWidget {
+  const HomeSection({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: HomeBackground(
-            child: Column(
-                children: [CityWeather(), Image.asset(Assets.imgHome)])));
+    return HomeBackground(
+        child: Column(
+            children: [CityWeather(), Spacer(), Image.asset(Assets.imgHome)]));
   }
 }
 

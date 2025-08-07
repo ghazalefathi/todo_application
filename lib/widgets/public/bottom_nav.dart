@@ -5,6 +5,7 @@ import 'package:todo_application/core/enum.dart';
 import 'package:todo_application/core/extentions.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:todo_application/controller/main_controller.dart';
+import 'package:todo_application/screens/main/home/home_section.dart';
 import '../../core/assets.dart';
 import '../../widgets/public/my_text_button.dart';
 
@@ -22,11 +23,11 @@ class BottomNavWidgetState extends State<BottomNavWidget> {
     return Directionality(
       textDirection: TextDirection.ltr,
       child: Container(
-          height: 65 + context.bottomSafeArea,
+          height: 40 + context.bottomSafeArea,
           padding: EdgeInsets.only(
               left: 20, right: 20, bottom: context.bottomSafeArea, top: 5),
           width: context.appWidth,
-          margin: EdgeInsets.only(top: 5),
+          // margin: EdgeInsets.only(top: 5),
           decoration: BoxDecoration(
             boxShadow: [
               BoxShadow(
@@ -97,7 +98,6 @@ class BottomNavWidgetState extends State<BottomNavWidget> {
   }
 }
 
-
 class IndexedScreens extends StatefulWidget {
   const IndexedScreens({super.key, required this.index});
   final int index;
@@ -109,6 +109,7 @@ class IndexedScreens extends StatefulWidget {
 class IndexedScreensState extends State<IndexedScreens> {
   @override
   Widget build(BuildContext context) {
-    return IndexedStack(index: widget.index, children: [SizedBox(),SizedBox(),SizedBox()]);
+    return IndexedStack(
+        index: widget.index, children: [SizedBox(), HomeSection(), SizedBox()]);
   }
 }

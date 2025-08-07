@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  static Color get primary => Color.fromRGBO(1, 17, 61, 1);
-  static Color get secondary => Color(0xff344FA1);
+  static Color get primary => Color(0xffC9A48C);
+  static Color get primary2 => Color.fromARGB(255, 150, 121, 102);
+  static Color get secondary => Color(0xff282632);
 
   static Color get black => Colors.black;
   static Color get white => Color(0xffF6F3FF);

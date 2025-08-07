@@ -3,7 +3,6 @@ import 'package:todo_application/screens/auth/forget_password_screen.dart';
 import 'package:todo_application/screens/auth/login_screen.dart';
 import 'package:todo_application/screens/auth/onbording_screen.dart';
 import 'package:todo_application/screens/auth/register_screen.dart';
-import 'package:todo_application/screens/main/home/home_screen.dart';
 import 'package:todo_application/screens/main/main_screen.dart';
 import '../screens/splash/splash_screen.dart';
 
@@ -15,10 +14,11 @@ class Routes {
   static String get onbording => '/onbording';
   static String get home => '/home';
   static String get main => '/main';
+  static String get test => '/test';
 
 
   //! Default Screen
-  static String defaultScreen() => main;
+  static String defaultScreen() => login;
   //! End Default Screen
 
   static List<GetPage> get page => [
@@ -27,7 +27,6 @@ class Routes {
         GetPage(name: register, page: () => const RegisterScreen()),
         GetPage(name: forgetPassword, page: () => const ForgetPasswordScreen()),
         GetPage(name: onbording, page: () => const OnbordingScreen()),
-        GetPage(name: home, page: () => const HomeScreen()),
         GetPage(name: main, page: () => const MainScreen()),
        
       ];
